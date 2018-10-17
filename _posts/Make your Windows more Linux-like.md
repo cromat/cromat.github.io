@@ -3,6 +3,8 @@ layout: post
 title: Make your Windows more Linux-like
 ---
 
+![_config.yml]({{ site.baseurl }}/images/config.png)
+
 If you are, like me, working in a corporate environment, there is a big chance that you are obligated to use Windows OS with all its utilities. I am Linux user for about 3 years and for me as a software developer
 it is much easier and practical to use a Linux distro for daily work. Here, I will put a list of stuff that made my Windows (7) pc more Linux-like wich is boosting my daily performance at work. This tips can also
 be used on Windows Vista, 8 and 10.
