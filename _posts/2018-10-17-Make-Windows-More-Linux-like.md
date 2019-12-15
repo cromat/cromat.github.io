@@ -8,7 +8,7 @@ it is much easier and practical to use a Linux distro for daily work. Here, I wi
 be used on Windows Vista, 8 and 10.
 
 
-##[Cmder](http://cmder.net)
+## [Cmder](http://cmder.net)
 
 As their title says, it's aportable console emulator for Windows. It is based on ConEmu and spiced up with Monokai color scheme and custom prompt layout. It supports multiple tabs, splitting and emulating of any 
 shell/console that you have installed. You can also configure your default starting console e.g. cygwin. 
@@ -20,7 +20,7 @@ Some helpful stuff about Cmder:
     - Fast new tab Shift + Alt + number (1. CMD, 2. Git Bash)
 
 
-##[Cygwin](https://www.cygwin.com) with package manager
+## [Cygwin](https://www.cygwin.com) with package manager
 
 Today cygwin is a little bit pushed out by WSL but as this article is also based for Windows 7 users, cygwin is still universal linux tooling environment for Windows.
 When you download and start installing cygwin, I recommend you to add next tools from wizard: vim, wget, curl, lynx, procps-ng, python3-pip, python-setuptools.
@@ -46,8 +46,9 @@ Enable vim selection in cygwin: Settings > Mark/Copy > Remove vim from exception
 
 To show git branch in git directory, add these lines to .bash_profile: 
 
-        ```parse_git_branch() {
+        ```
+        parse_git_branch() {
                 git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
         }
-
-        export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "```
+        export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+        ```
